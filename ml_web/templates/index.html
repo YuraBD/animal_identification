@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2 class="white-text">Upload Audio</h2>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" id="audio" name="audio" accept=".wav,.mp3,.aac,.m4a">
+      <input type="submit" value="Predict">
+    </form>
+  </div>
+</body>
+<footer>
+    Authors:<br>
+    Bohdan Bryk<br>
+    Yurii Bodakovskyi
+</footer>
+</html>
